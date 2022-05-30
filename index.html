@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Image and text -->
+    <nav class="navbar shadow">
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <img
+          src="/img/logo.png"
+          width="30"
+          height="30"
+          alt="Bit Project Serverless Logo"
+        />
+        <span class="font-weight-bold ml-2" style="color: white"
+          >Verste <span style="color: #faca46">Contributor</span></span
+        >
+      </a>
+    </nav>
+
+    <div class="container mt-5">
+      <h1>Convert Research Paper Title to <code>URL Case</code></h1>
+
+      <form onsubmit="convertTitleToURL(event)">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Research Paper Title</label>
+          <input
+            type="text"
+            class="form-control"
+            id="research-paper-title-input"
+            placeholder="e.g. Leveraging BERT for Extractive Text Summarization on Lectures
+            "
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="url-case-ouput">URL Format</label>
+          <textarea
+            class="form-control"
+            id="url-case-ouput"
+            placeholder="e.g. leveraging-bert-for-extractive-text-summarization-on-lectures"
+            rows="2"
+            readonly
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-info">Convert</button>
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
