@@ -20,3 +20,23 @@ label {
 .hidden {
   display: none;
 }
+
+a {
+  color: #ee9fc2;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+a:hover {
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #ee9fc2;
+  text-decoration: none;
+  color: white;
+}
+
+.text-muted {
+  color: #d3d3d3 !important;
+}

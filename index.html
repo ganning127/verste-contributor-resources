@@ -23,33 +23,93 @@
     </nav>
 
     <div class="container mt-5">
-      <h1>Convert Research Paper Title to <code>URL Case</code></h1>
+      <!-- BEGIN RESOURCE 1 -->
+      <div>
+        <h1>Convert Research Paper Title to <code>URL Case</code></h1>
+        <p class="text-muted">
+          Paste the title of your research paper and convert it to the URL case
+          format!
+        </p>
 
-      <form onsubmit="convertTitleToURL(event)">
-        <div class="form-group">
-          <label for="exampleInputEmail1">Research Paper Title</label>
-          <input
-            type="text"
-            class="form-control"
-            id="research-paper-title-input"
-            placeholder="e.g. Leveraging BERT for Extractive Text Summarization on Lectures
+        <form onsubmit="convertTitleToURL(event)">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Research Paper Title</label>
+            <input
+              type="text"
+              class="form-control"
+              id="research-paper-title-input"
+              placeholder="e.g. Leveraging BERT for Extractive Text Summarization on Lectures
             "
-          />
-        </div>
+            />
+          </div>
 
-        <div class="form-group">
-          <label for="url-case-ouput">URL Format</label>
-          <textarea
-            class="form-control"
-            id="url-case-ouput"
-            placeholder="e.g. leveraging-bert-for-extractive-text-summarization-on-lectures"
-            rows="2"
-            readonly
-          ></textarea>
-        </div>
+          <div class="form-group">
+            <label for="url-case-ouput">URL Format</label>
+            <textarea
+              class="form-control"
+              id="url-case-ouput"
+              placeholder="e.g. leveraging-bert-for-extractive-text-summarization-on-lectures"
+              rows="2"
+              readonly
+            ></textarea>
+          </div>
 
-        <button type="submit" class="btn btn-info">Convert</button>
-      </form>
+          <button type="submit" class="btn btn-info">Convert</button>
+        </form>
+      </div>
+
+      <!-- BEGIN RESOURCE 2 -->
+      <div class="mt-5">
+        <h1>MLA Citation Makers</h1>
+        <p class="text-muted">
+          These resources can be used to create MLA citations of resources that
+          you used when simplifying your research paper!
+        </p>
+        <ul class="list-unstyled">
+          <li class="media">
+            <img
+              src="./img/citationmachine.png"
+              class="mr-3"
+              alt="Citation Machine Logo"
+              height="80px"
+            />
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                <a href="https://www.citationmachine.net/" target="_blank"
+                  >Citation Machine</a
+                >
+              </h5>
+              <p>
+                Citation machine is a free resource that generates MLA citations
+                from information that you provide about a website! Citation
+                Machine automatically alphabetizes the order of the citations to
+                be standard with Verste's guidelines.
+              </p>
+            </div>
+          </li>
+          <li class="media my-4">
+            <img
+              src="./img/easybib.png"
+              class="mr-3"
+              alt="Citation Machine Logo"
+              height="80px"
+            />
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                <a href="https://www.easybib.com/mla/source" target="_blank"
+                  >EasyBib</a
+                >
+              </h5>
+              <p>
+                Similar to Citation Machine, EasyBib is also a Chegg service
+                that allows users to create MLA citations. All you need to do is
+                enter a website URL and most fields will auto-populate with the
+                necessary information.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.js"></script>
